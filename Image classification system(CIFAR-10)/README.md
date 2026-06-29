@@ -365,28 +365,3 @@ Contributions welcome! Please:
 3. Commit changes
 4. Push to branch
 5. Open pull request
-
-## 📝 License
-
-MIT License - See LICENSE file
-
-## 👨‍💼 Author
-
-VisionAI Development Team
-
-## 🙏 Acknowledgments
-
-- TensorFlow/Keras team
-- CIFAR-10 dataset creators
-- Streamlit community
-
-## 📧 Support
-
-For issues, questions, or suggestions:
-- Open GitHub issue
-- Contact: support@visionai.example.com
-
----
-
-**Last Updated**: December 2024
-**Version**: 1.0.0
