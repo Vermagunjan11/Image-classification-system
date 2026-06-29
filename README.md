@@ -1,45 +1,45 @@
 # Image-classification-system
-VisionAI: Advanced Image Classification System
-A production-ready, deep learning-based image classification system with multiple architectures, web interface, and comprehensive analytics.
+# VisionAI: Advanced Image Classification System
+# A production-ready, deep learning-based image classification system with multiple architectures, web interface, and comprehensive analytics.
 
-📋 Table of Contents
-Features
-Project Structure
-Installation
-Quick Start
-Usage
-Models
-API Documentation
-Deployment
-Performance Benchmarks
-✨ Features
-Core Features
-Multi-Model Architecture: Custom CNN, MobileNetV2, ResNet50
-Image Processing: Upload, resize, normalize images
-Real-time Predictions: Fast inference with confidence scores
-Batch Processing: Process multiple images at once
-Model Comparison: Compare performance across models
-Advanced Features
-Explainable AI: Grad-CAM heatmap visualizations
-Data Augmentation: 8+ augmentation techniques
-Training Monitoring: Real-time loss/accuracy tracking
-Performance Analytics: Comprehensive metrics dashboard
-Prediction History: Track all predictions
-Export Results: CSV, JSON, PDF export
-Web Interface
-Modern UI: Glassmorphism design, responsive layout
-Multiple Pages: Home, Predict, Analytics, Model Comparison, Settings
-Interactive Charts: Plotly visualizations
-Real-time Updates: Live prediction counter
-Dark Mode: Theme customization
-📁 Project Structure
-VisionAI/
-├── models/
-│   ├── cnn_model.py              # Custom CNN architecture
-│   ├── mobilenet_model.py        # MobileNetV2 transfer learning
-│   └── resnet_model.py           # ResNet50 transfer learning
-│
-├── utils/
+# 📋 Table of Contents
+# Features
+# Project Structure
+# Installation
+# Quick Start
+# Usage
+# Models
+# API Documentation
+# Deployment
+# Performance Benchmarks
+# ✨ Features
+# Core Features
+# Multi-Model Architecture: Custom CNN, MobileNetV2, ResNet50
+# Image Processing: Upload, resize, normalize images
+# Real-time Predictions: Fast inference with confidence scores
+# Batch Processing: Process multiple images at once
+# Model Comparison: Compare performance across models
+# Advanced Features
+# Explainable AI: Grad-CAM heatmap visualizations
+# Data Augmentation: 8+ augmentation techniques
+# Training Monitoring: Real-time loss/accuracy tracking
+# Performance Analytics: Comprehensive metrics dashboard
+# Prediction History: Track all predictions
+# Export Results: CSV, JSON, PDF export
+# Web Interface
+# Modern UI: Glassmorphism design, responsive layout
+# Multiple Pages: Home, Predict, Analytics, Model Comparison, Settings
+# Interactive Charts: Plotly visualizations
+# Real-time Updates: Live prediction counter
+# Dark Mode: Theme customization
+# 📁 Project Structure
+# VisionAI/
+# ├── models/
+# │   ├── cnn_model.py              # Custom CNN architecture
+# │   ├── mobilenet_model.py        # MobileNetV2 transfer learning
+# │   └── resnet_model.py           # ResNet50 transfer learning
+# │
+# ├── utils/
 │   ├── preprocessing.py          # Image preprocessing
 │   ├── augmentation.py           # Data augmentation
 │   ├── visualization.py          # Visualization utilities
@@ -208,67 +208,67 @@ Go to https://share.streamlit.io/
 Deploy your app
 Access via public URL
 Docker
-FROM python:3.9
+# FROM python:3.9
 
-WORKDIR /app
+# WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install -r requirements.txt
+# COPY requirements.txt .
+# RUN pip install -r requirements.txt
 
-COPY . .
+# COPY . .
 
-EXPOSE 8501
+# EXPOSE 8501
 
-CMD ["streamlit", "run", "streamlit_app.py"]
-Build and run:
+# CMD ["streamlit", "run", "streamlit_app.py"]
+# Build and run:
 
-docker build -t visionai .
-docker run -p 8501:8501 visionai
-Hugging Face Spaces
-Create new Space on Hugging Face
-Upload project files
-Configure requirements.txt
-Deploy automatically
-AWS/GCP/Azure
-Use container deployment with the provided Docker configuration.
+# docker build -t visionai .
+# docker run -p 8501:8501 visionai
+# Hugging Face Spaces
+# Create new Space on Hugging Face
+# Upload project files
+# Configure requirements.txt
+# Deploy automatically
+# AWS/GCP/Azure
+# Use container deployment with the provided Docker configuration.
 
-📊 Performance Benchmarks
-CIFAR-10 Results
-Model	Accuracy	Precision	Recall	F1-Score	Size	Speed
-Custom CNN	82.5%	0.81	0.82	0.81	2.1 MB	Very Fast
-MobileNetV2	91.2%	0.90	0.91	0.90	11.4 MB	Fast
-ResNet50	94.1%	0.93	0.94	0.93	97.5 MB	Moderate
-Training Time (per epoch)
-Custom CNN: ~15 seconds
-MobileNetV2: ~45 seconds
-ResNet50: ~90 seconds
-🔧 Troubleshooting
-Model Loading Issues
+# 📊 Performance Benchmarks
+# CIFAR-10 Results
+# 	Accuracy	Precision	Recall	F1-Score	Size	Speed
+# Custom CNN	82.5%	0.81	0.82	0.81	2.1 MB	Very Fast
+# MobileNetV2	91.2%	0.90	0.91	0.90	11.4 MB	Fast
+# ResNet50	94.1%	0.93	0.94	0.93	97.5 MB	Moderate
+# Training Time (per epoch)
+# Custom CNN: ~15 seconds
+# MobileNetV2: ~45 seconds
+# ResNet50: ~90 seconds
+# 🔧 Troubleshooting
+# Model Loading Issues
 # Clear cache if having issues
-st.cache_resource.clear()
-Memory Issues
-Use smaller batch size
-Reduce image size
-Use Custom CNN instead of ResNet50
-Slow Predictions
-Use GPU if available
-Consider MobileNetV2 for faster inference
-Batch process images
-🤝 Contributing
-Contributions welcome! Please:
+# st.cache_resource.clear()
+# Memory Issues
+# Use smaller batch size
+# Reduce image size
+# Use Custom CNN instead of ResNet50
+# Slow Predictions
+# Use GPU if available
+# Consider MobileNetV2 for faster inference
+# Batch process images
+# 🤝 Contributing
+# Contributions welcome! Please:
 
-Fork repository
-Create feature branch
-Commit changes
-Push to branch
-Open pull request
-📝 License
-MIT License - See LICENSE file
+# Fork repository
+# Create feature branch
+# Commit changes
+# Push to branch
+# Open pull request
+# 📝 License
+# MIT License - See LICENSE file
 
-👨‍💼 Author
-VisionAI Development Team
+# 👨‍💼 Author
+# VisionAI Development Team
 
-🙏 Acknowledgments
-TensorFlow/Keras team
-CIFAR-10 dataset creators
-Streamlit community
+# 🙏 Acknowledgments
+# TensorFlow/Keras team
+# CIFAR-10 dataset creators
+# Streamlit community
