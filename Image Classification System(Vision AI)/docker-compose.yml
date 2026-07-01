@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  visionai:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
+    container_name: visionai-app
+    
+    ports:
+      - "8501:8501"
+    
+    volumes:
+      - ./saved_models:/app/saved_models
+      - ./dataset:/app/dataset
+      - ./outputs:/app/outputs
+      - ./logs:/app/logs
+    
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TF_CPP_MIN_LOG_LEVEL=2
+      - STREAMLIT_SERVER_HEADLESS=true
+    
+    networks:
+      - visionai-network
+    
+    restart: unless-stopped
+    
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8501/_stcore/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  visionai-network:
+    driver: bridge
